@@ -5,11 +5,11 @@
 class Yt2abs < Formula
   desc ""
   homepage "https://github.com/simonwehle/yt2abs"
-  version "1.7.5"
+  version "1.8.0"
 
   on_macos do
-    url "https://github.com/simonwehle/yt2abs/releases/download/v1.7.5/yt2abs_1.7.5_darwin_all.tar.gz"
-    sha256 "ba7a4899eadc9b5553762c8f01d9b78b739a34c57fe8c9d7ccaa8f9f633b9955"
+    url "https://github.com/simonwehle/yt2abs/releases/download/v1.8.0/yt2abs_1.8.0_darwin_all.tar.gz"
+    sha256 "39a7663ca6a92471697ccf5a0bff0b03a6b16d70d8e8c70836eacc2498b80d34"
 
     def install
       bin.install "yt2abs"
@@ -18,16 +18,16 @@ class Yt2abs < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/simonwehle/yt2abs/releases/download/v1.7.5/yt2abs_1.7.5_linux_amd64.tar.gz"
-      sha256 "de142f93822cb972ecf5f00b906bf0cb3510a44a45a4ebaddce5af54d6597538"
+      url "https://github.com/simonwehle/yt2abs/releases/download/v1.8.0/yt2abs_1.8.0_linux_amd64.tar.gz"
+      sha256 "9a44224054376a7c02bfbe4f4ab9890429ae36c77c62fce32a1266a51ebde5c4"
 
       def install
         bin.install "yt2abs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simonwehle/yt2abs/releases/download/v1.7.5/yt2abs_1.7.5_linux_arm64.tar.gz"
-      sha256 "b7935589bec5a385e6471b39caa8c06068c8726be5d6a9e85e1fafdf8171d0ed"
+      url "https://github.com/simonwehle/yt2abs/releases/download/v1.8.0/yt2abs_1.8.0_linux_arm64.tar.gz"
+      sha256 "6e64e83cf8fbff02da9e537ea4512c95db13ca8b5f3277cf4f3876f636d1dbb6"
 
       def install
         bin.install "yt2abs"
